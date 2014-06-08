@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace Ego
 {
-    public enum EnumWindowState
+    public enum WindowState
     {
         Normal = 1,
         Maximized = 3,
@@ -43,7 +43,7 @@ namespace Ego
             else
             {
                 BringWindowToTop(hWnd);
-                ShowWindow(hWnd, (int)EnumWindowState.Normal);
+                ShowWindow(hWnd, (int)Ego.WindowState.Normal);
             }//else
         }//SetForegroundWindow
     }//class
